@@ -95,7 +95,7 @@ class MakeEnv:
         Clones the source code from a specified repository into the build directory
         """
         subprocess.run(
-            ['git', 'clone', 'https://github.com/NotNukerOffical/NNGrrabber.git'], cwd=self.build_dir, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+            ['git', 'clone', 'https://github.com/NotNukerOffical/nngrrabber.git'], cwd=self.build_dir, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         shutil.move(os.path.join(self.build_dir,
                     'nngrabber', 'src'), self.build_dir)
 
